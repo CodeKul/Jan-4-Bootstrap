@@ -11,11 +11,18 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+
+    <style>
+      .btn-primary{
+        background-color: yellow;
+      }
+    </style>
   </head>
   <body>
     <button
-      data-bs-toggle="modal"
-      data-bs-target="#modal"
+     onclick="toggleModal()"
+     
       class="btn btn-primary"
       data-bs-whatever="@user1"
     >
@@ -102,6 +109,19 @@
         </div>
       </div>
     </div>
+
+
+    <script>
+
+      function toggleModal (){
+        let myModal = document.getElementById("modal")
+     console.log(myModal)
+     myModal.toggle()
+      }
+    
+
+      // myModal.hide()
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
