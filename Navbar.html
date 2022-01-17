@@ -11,9 +11,21 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <style>
+      nav button.navbar-toggler .btn-close, .btn-close:hover{
+        color: red !important;
+        opacity: 5;
+      }
+
+
+
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-xxl navbar-dark bg-primary">
+
+    <div class="btn-close"></div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
       <div class="container">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
@@ -25,7 +37,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="btn-close"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
